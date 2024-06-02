@@ -9,7 +9,7 @@ export class UserspcComponent implements OnInit{
 
 userName:string = '';
 usersList:string[] = [];
-
+name = 'Jahnavi';
 constructor(){}
 ngOnInit(): void {
 
@@ -18,6 +18,8 @@ ngOnInit(): void {
 onUserAdded(event: string){
   this.usersList.push(event);
 }
-
+onNameChanged() {
+  this.name = 'Hi jahnavi';
+}
 
 }
