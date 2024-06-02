@@ -3,7 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  // styleUrls: ['./user.component.css'],
+  styles: [
+    `
+    .offline{
+      color: white;
+    }
+    `
+  ]
 })
 export class UserComponent implements OnInit{
 userId: number = 10;
