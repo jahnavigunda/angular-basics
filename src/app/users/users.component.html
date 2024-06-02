@@ -1,0 +1,26 @@
+<h3>Users Component</h3>
+<div class="my-2">
+    <label>User Name</label>
+    <!-- event binding -->
+    <!-- <input type="text" class="form-control" (input)="onUpdateUser($event)"/> -->
+    <!-- two way binding -->
+    <input type="text" class="form-control" [(ngModel)] = "newUserName"/>
+
+    <div>{{newUserName}}</div>
+</div>
+<!-- property binding -->
+<button class="btn-btn-primary" 
+[disabled]=" !allowNewUser"
+(click)="changeUserCreatedStatus()">Add User</button>
+
+<!-- *ngIf else directive -->
+<div *ngIf="isUserCreated ; else noUser">
+    User is Created and the username is {{newUserName}}
+</div>
+<ng-template #noUser>
+    <div>No User is Created</div>
+</ng-template>
+
+<app-user></app-user>
+<app-user></app-user>
+<app-user></app-user>
