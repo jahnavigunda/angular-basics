@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user/user.component';
-import { UsersComponent } from './users/users.component';
+import { UsersComponent } from './user/users/users.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
