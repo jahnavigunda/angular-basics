@@ -11,6 +11,7 @@ export class UsersComponent implements OnInit{
   userCreatedStatus = "No User is Created";
   newUserName="Test User";
   isUserCreated=false;
+  users = ['user1', 'user2'];
   constructor(){
     setTimeout(()=> {
       this.allowNewUser = true;
@@ -19,7 +20,7 @@ export class UsersComponent implements OnInit{
 
   changeUserCreatedStatus(){
     this.isUserCreated= true;
-    this.userCreatedStatus = "User is Created";
+    this.users.push(this.newUserName);
   }
   onUpdateUser(event : Event) {
     this.newUserName= (<HTMLInputElement>event.target).value;
