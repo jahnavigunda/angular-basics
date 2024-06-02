@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { UserpcComponent } from './userParentChild/userpc/userpc.component';
 import { UserspcComponent } from './userParentChild/userspc/userspc.component';
 import { AdduserComponent } from './userParentChild/adduser/adduser.component';
+import { HighlightTextDirective } from './Directives/HighlightText.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AdduserComponent } from './userParentChild/adduser/adduser.component';
     UsersComponent,
     UserpcComponent,
     UserspcComponent,
-    AdduserComponent
+    AdduserComponent, 
+    HighlightTextDirective
   ],
   imports: [
     BrowserModule,
