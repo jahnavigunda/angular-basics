@@ -15,8 +15,8 @@ ngOnInit(): void {
 
 }
 
-onUserAdded(){
-  this.usersList.push(this.userName);
+onUserAdded(event: string){
+  this.usersList.push(event);
 }
 
 

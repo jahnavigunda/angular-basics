@@ -8,6 +8,7 @@ import { UsersComponent } from './user/users/users.component';
 import { FormsModule } from '@angular/forms';
 import { UserpcComponent } from './userParentChild/userpc/userpc.component';
 import { UserspcComponent } from './userParentChild/userspc/userspc.component';
+import { AdduserComponent } from './userParentChild/adduser/adduser.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UserspcComponent } from './userParentChild/userspc/userspc.component';
     UserComponent,
     UsersComponent,
     UserpcComponent,
-    UserspcComponent
+    UserspcComponent,
+    AdduserComponent
   ],
   imports: [
     BrowserModule,
