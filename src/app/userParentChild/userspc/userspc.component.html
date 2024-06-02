@@ -5,5 +5,6 @@
     <button class="btn btn-danger" (click) = "onDeleteComponent()">Delete Component</button>
 
     <app-userpc *ngFor="let user of usersList" [user]="user" [name] = "name">
+        <p #userParagraph>UserName: {{user}}</p>
     </app-userpc>
 </div>
