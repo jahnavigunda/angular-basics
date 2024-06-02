@@ -10,6 +10,7 @@ import { UserpcComponent } from './userParentChild/userpc/userpc.component';
 import { UserspcComponent } from './userParentChild/userspc/userspc.component';
 import { AdduserComponent } from './userParentChild/adduser/adduser.component';
 import { HighlightTextDirective } from './Directives/HighlightText.directive';
+import { RendererHighlightDirective } from './Directives/renderer-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { HighlightTextDirective } from './Directives/HighlightText.directive';
     UserpcComponent,
     UserspcComponent,
     AdduserComponent, 
-    HighlightTextDirective
+    HighlightTextDirective, RendererHighlightDirective,
   ],
   imports: [
     BrowserModule,
