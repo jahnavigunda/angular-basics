@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserspcComponent implements OnInit{
 
+
 userName:string = '';
 usersList:string[] = [];
 name = 'Jahnavi';
@@ -21,5 +22,7 @@ onUserAdded(event: string){
 onNameChanged() {
   this.name = 'Hi jahnavi';
 }
-
+onDeleteComponent() {
+  this.usersList = [];
+  }
 }
