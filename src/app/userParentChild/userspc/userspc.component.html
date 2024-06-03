@@ -15,3 +15,10 @@
     <button class="btn btn-primary" (click)="isAvailable = !isAvailable">Toggle Condition</button>
 </div>
  <div *appAlternateIf="isAvailable">This condition enables with custom directive</div>
+
+ <div [ngSwitch]="value">
+    <div *ngSwitchCase="10">Value is 10</div>
+    <div *ngSwitchCase="15">Value is 15</div>
+    <div *ngSwitchDefault>Value is default</div>
+
+ </div>

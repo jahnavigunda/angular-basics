@@ -12,6 +12,7 @@ userName:string = '';
 usersList:string[] = [];
 name = 'Jahnavi';
 isAvailable: boolean = true;
+value = 25;
 constructor(){}
 ngOnInit(): void {
 

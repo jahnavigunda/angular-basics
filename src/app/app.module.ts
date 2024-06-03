@@ -11,7 +11,7 @@ import { UserspcComponent } from './userParentChild/userspc/userspc.component';
 import { AdduserComponent } from './userParentChild/adduser/adduser.component';
 import { HighlightTextDirective } from './Directives/HighlightText.directive';
 import { RendererHighlightDirective } from './Directives/renderer-highlight.directive';
-import { AlternateIfDirective } from './directives/alternate-if.directive';
+import { AlternateIfDirective } from './Directives/alternate-if.directive';
 
 @NgModule({
   declarations: [
