@@ -4,7 +4,8 @@ import { LoggingService } from 'src/app/services/logging.service';
 @Component({
   selector: 'app-userspc',
   templateUrl: './userspc.component.html',
-  styleUrls: ['./userspc.component.css']
+  styleUrls: ['./userspc.component.css'],
+  providers: [LoggingService],
 })
 export class UserspcComponent implements OnInit{
 
@@ -14,7 +15,7 @@ usersList:string[] = [];
 name = 'Jahnavi';
 isAvailable: boolean = true;
 value = 25;
-constructor(){}
+constructor(private loggingService: LoggingService){}
 ngOnInit(): void {
 
 }
@@ -24,8 +25,7 @@ onUserAdded(event: string){
 }
 onNameChanged() {
   this.name = 'Hi jahnavi';
-  let loggingService = new LoggingService();
-  loggingService.logToConsole('user is changed: ' +this.name);
+  this.loggingService.logToConsole('user is changed: ' +this.name);
 }
 onDeleteComponent() {
   this.usersList = [];
