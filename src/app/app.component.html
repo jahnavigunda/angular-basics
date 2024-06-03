@@ -4,7 +4,13 @@
     <h3>Hi Jahnavi</h3>
   <hr />
     <!-- <app-users></app-users> -->
-    <app-userspc></app-userspc>
+    <!-- <app-userspc></app-userspc> -->
+    <app-adduser></app-adduser> 
+    <app-userpc
+       *ngFor="let user of users; let i = index"
+       [userandstatus]="user"
+       [id]=i></app-userpc>
+
   </div>
 </div>
 </div>

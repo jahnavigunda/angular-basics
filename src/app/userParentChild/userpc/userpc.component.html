@@ -1,4 +1,18 @@
 <!-- <div>User name is {{userName}}</div> -->
-<div>
+<!-- <div>
     <ng-content></ng-content>
+</div> -->
+
+<div>
+    <span>userName: {{userandstatus.name}}</span>
+    <span>Status: {{userandstatus.status}}</span>
+    <span>
+        <button class="btn btn-sm btn-primary" (click)="onUpdateStatus('active')">
+            Set Active
+        </button>
+        <button class="btn btn-sm btn-primary" (click)="onUpdateStatus('inactive')">
+            Set Inactive
+        </button>
+
+    </span>
 </div>
