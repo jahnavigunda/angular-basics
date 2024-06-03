@@ -6,7 +6,7 @@ import { UserService } from 'src/app/services/user.service';
   selector: 'app-adduser',
   templateUrl: './adduser.component.html',
   styleUrls: ['./adduser.component.css'],
-  providers: [LoggingService, UserService],
+  providers: [LoggingService],
 })
 export class AdduserComponent implements OnInit{
 

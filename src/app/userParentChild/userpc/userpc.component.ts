@@ -5,7 +5,6 @@ import { UserService } from 'src/app/services/user.service';
   selector: 'app-userpc',
   templateUrl: './userpc.component.html',
   styleUrls: ['./userpc.component.css'],
-  providers:[UserService]
 })
 export class UserpcComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy{
 
