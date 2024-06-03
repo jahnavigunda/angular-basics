@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoggingService } from 'src/app/services/logging.service';
 
 @Component({
   selector: 'app-userspc',
@@ -23,6 +24,8 @@ onUserAdded(event: string){
 }
 onNameChanged() {
   this.name = 'Hi jahnavi';
+  let loggingService = new LoggingService();
+  loggingService.logToConsole('user is changed: ' +this.name);
 }
 onDeleteComponent() {
   this.usersList = [];

@@ -14,33 +14,33 @@ constructor(){}
 
  
   ngOnChanges(changes: SimpleChanges) {
-    console.log('ngOnchanges called');
-    console.log(changes);
+    // console.log('ngOnchanges called');
+    // console.log(changes);
   }
 
 ngOnInit(): void {
-  console.log('ngOnInit called');
-  console.log(this.userParagraph);
+  // console.log('ngOnInit called');
+  // console.log(this.userParagraph);
 }
 ngDoCheck() {
-  console.log('ngDocheck called');
+  // console.log('ngDocheck called');
 }
 
 ngAfterContentInit(){
-  console.log('ngAfterContentInit called');
-  console.log(this.userParagraph?.nativeElement.textContent);
+ // console.log('ngAfterContentInit called');
+ // console.log(this.userParagraph?.nativeElement.textContent);
 
 }
 ngAfterContentChecked(){
-    console.log("after content checked called");
+   // console.log("after content checked called");
 }
 ngAfterViewInit() {
-  console.log("after view init called");
+  //console.log("after view init called");
 }
 ngAfterViewChecked() {
-  console.log("after view checked called");
+  //console.log("after view checked called");
 }
 ngOnDestroy() {
-  console.log("ng on destroy called");
+  //console.log("ng on destroy called");
 }
 }
