@@ -21,9 +21,11 @@ ngOnInit(): void {
 onUserAdded(){
   this.userAdded.emit(this.userInput?.nativeElement.value);
   this.loggingService.logToConsole('User is added: '+this.userName);
+
 }
 
 onAdduser(){
   this.userSerivce.addUser(this.userName, 'active');
+
 }
 }

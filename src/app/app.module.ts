@@ -14,6 +14,7 @@ import { RendererHighlightDirective } from './Directives/renderer-highlight.dire
 import { AlternateIfDirective } from './Directives/alternate-if.directive';
 import { UserService } from './services/user.service';
 import { LoggingService } from './services/logging.service';
+import { LogService } from './services/log.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { LoggingService } from './services/logging.service';
     BrowserModule,
     FormsModule
   ],
-  providers: [UserService, LoggingService],
+  providers: [UserService, LoggingService, LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
