@@ -15,7 +15,16 @@ import { AlternateIfDirective } from './Directives/alternate-if.directive';
 import { UserService } from './services/user.service';
 import { LoggingService } from './services/logging.service';
 import { LogService } from './services/log.service';
+import { UsersRouteComponent } from './AngularRouting/users-route/users-route.component';
+import { HomeComponent } from './AngularRouting/home/home.component';
+import { CategoriesComponent } from './AngularRouting/categories/categories.component';
+import { Router, RouterModule, Routes } from '@angular/router';
 
+const appRoutes: Routes =[
+  {path:'', component: HomeComponent},
+  {path:'users', component: UsersRouteComponent},
+  {path: 'categories', component: CategoriesComponent},
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,11 +33,11 @@ import { LogService } from './services/log.service';
     UserpcComponent,
     UserspcComponent,
     AdduserComponent, 
-    HighlightTextDirective, RendererHighlightDirective, AlternateIfDirective,
+    HighlightTextDirective, RendererHighlightDirective, AlternateIfDirective, UsersRouteComponent, HomeComponent, CategoriesComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule, RouterModule.forRoot(appRoutes)
   ],
   providers: [UserService, LoggingService, LogService],
   bootstrap: [AppComponent]
