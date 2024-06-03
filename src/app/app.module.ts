@@ -18,7 +18,7 @@ import { LogService } from './services/log.service';
 import { UsersRouteComponent } from './AngularRouting/users-route/users-route.component';
 import { HomeComponent } from './AngularRouting/home/home.component';
 import { CategoriesComponent } from './AngularRouting/categories/categories.component';
-import { Router, RouterModule, Routes } from '@angular/router';
+import { Router, RouterModule, Routes,RouterLinkActive } from '@angular/router';
 
 const appRoutes: Routes =[
   {path:'', component: HomeComponent},
@@ -33,7 +33,8 @@ const appRoutes: Routes =[
     UserpcComponent,
     UserspcComponent,
     AdduserComponent, 
-    HighlightTextDirective, RendererHighlightDirective, AlternateIfDirective, UsersRouteComponent, HomeComponent, CategoriesComponent,
+    HighlightTextDirective, RendererHighlightDirective, AlternateIfDirective,
+     UsersRouteComponent, HomeComponent, CategoriesComponent,
   ],
   imports: [
     BrowserModule,
