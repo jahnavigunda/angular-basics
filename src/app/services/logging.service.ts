@@ -8,6 +8,6 @@ export class LoggingService {
   constructor() { }
 
   logToConsole(status: string){
-    console.log("This is logging service: " +status);
+    console.log("Logging the status in console and the status is: " +status);
   }
 }

@@ -12,6 +12,8 @@ import { AdduserComponent } from './userParentChild/adduser/adduser.component';
 import { HighlightTextDirective } from './Directives/HighlightText.directive';
 import { RendererHighlightDirective } from './Directives/renderer-highlight.directive';
 import { AlternateIfDirective } from './Directives/alternate-if.directive';
+import { UserService } from './services/user.service';
+import { LoggingService } from './services/logging.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { AlternateIfDirective } from './Directives/alternate-if.directive';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [UserService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
