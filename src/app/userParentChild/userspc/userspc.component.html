@@ -10,3 +10,8 @@
 </div>
 <div appHighlightText> Please add the background color Red</div>
 <div appRendererHighlight [defaultColor]="'blue'"  [highlightColor]="'orange'"> Please add the background color green</div>
+
+<div>
+    <button class="btn btn-primary" (click)="isAvailable = !isAvailable">Toggle Condition</button>
+</div>
+ <div *appAlternateIf="isAvailable">This condition enables with custom directive</div>

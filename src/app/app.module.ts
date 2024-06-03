@@ -11,6 +11,7 @@ import { UserspcComponent } from './userParentChild/userspc/userspc.component';
 import { AdduserComponent } from './userParentChild/adduser/adduser.component';
 import { HighlightTextDirective } from './Directives/HighlightText.directive';
 import { RendererHighlightDirective } from './Directives/renderer-highlight.directive';
+import { AlternateIfDirective } from './directives/alternate-if.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { RendererHighlightDirective } from './Directives/renderer-highlight.dire
     UserpcComponent,
     UserspcComponent,
     AdduserComponent, 
-    HighlightTextDirective, RendererHighlightDirective,
+    HighlightTextDirective, RendererHighlightDirective, AlternateIfDirective,
   ],
   imports: [
     BrowserModule,

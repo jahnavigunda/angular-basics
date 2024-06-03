@@ -11,6 +11,7 @@ export class UserspcComponent implements OnInit{
 userName:string = '';
 usersList:string[] = [];
 name = 'Jahnavi';
+isAvailable: boolean = true;
 constructor(){}
 ngOnInit(): void {
 
