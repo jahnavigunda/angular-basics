@@ -14,13 +14,17 @@ userName: string='';
 @Output() userAdded = new EventEmitter<string>();
 
 @ViewChild('userInput') userInput: ElementRef | undefined;
-constructor(private loggingService: LoggingService, private userSerivce: UserService) {
+constructor( private userSerivce: UserService) {
 }
 ngOnInit(): void {
+  this.userSerivce.statusUpdated.subscribe((data)=>{
+    alert(data);
+}
+  );
 }
 onUserAdded(){
   this.userAdded.emit(this.userInput?.nativeElement.value);
-  this.loggingService.logToConsole('User is added: '+this.userName);
+  //this.loggingService.logToConsole('User is added: '+this.userName);
 
 }
 

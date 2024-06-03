@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { LoggingService } from './logging.service';
 import { LogService } from './log.service';
 
@@ -16,11 +16,16 @@ export class UserService {
 
   ];
 
+  statusUpdated = new EventEmitter<string>();
+
   addUser(name:string, status:string){
     this.users.push({name, status});
     this.logService.logConsole(status);
   }
   onUpdateStatus(id: number, status:string){
     this.users[id].status = status;
+    this.statusUpdated.emit(status);
+    this.logService.logConsole(status);
+
   }
 }
